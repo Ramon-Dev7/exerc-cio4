@@ -1,0 +1,43 @@
+Elabore um algoritmo para que o usuário, através da entrada de dados, informe os seus dados pessoais. Alguns desses dados
+fornecidos pelo usuário precisam ser apresentados na tela quando o algoritmo for executado, são eles:
+ 
+- Nome;
+- Endereço;
+- Cidade;
+- CPF;
+- RG.
+
+                                             ALGORITMO
+
+programa
+{// declaração de variáveis, tipo e nome
+caracter nome // variável do tipo CARACTER, apenas caracteres EX; 'r' 'T' '1',ou seja, palavra curta, pode ter letras e números.
+cadeia endereco, cidade // cadeia define variável do tipo strings, ou seja, caracteres 
+real cpf // real números em geral inclusive decimais
+inteiro rg // inteiro números positivos e nagativos, mas não pode ser decimais
+
+	
+	funcao inicio()
+	// entrada de dados,ex: quando o usuário digita seu nome.
+	
+	{    // (\n) quebra de linha
+		escreva("Digite seu Nome:\n")// comando escreva é para saída de dados 
+		leia(nome) // comando leia é para entrada de dados
+		escreva("Digite seu Endereço:\n")
+		leia(endereco)
+                escreva("Digite seu Cidade:\n")
+		leia(cidade)
+		escreva("Digite seu CPF:\n")
+		leia(cpf)
+		escreva("Digite seu RG:")
+		leia(rg)
+
+		escreva("Nome:", nome, "\n") // a variável que vai ser armazenada a resposta do usuário.
+		escreva("Endereço:", endereco, "\n")
+                escreva("Cidade:", cidade,"\n")
+		escreva("CPF:", cpf, "\n")
+		escreva("RG:", rg,)
+
+          // obs: na variável cadeia tem endereco e cidade para simplificar o código, ou seja, pode ser na mesma desde que seja separado por vírgula 
+	}
+}
